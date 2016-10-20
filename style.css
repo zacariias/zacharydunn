@@ -12,7 +12,7 @@ h1 {
 h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 30px 0 15px 0;
 }
 
 a {
@@ -48,8 +48,6 @@ div.post {
   clear: both;
   width: 700px;
   margin: 80px auto;
-  font-family: georgia, serif;
-  font-size: 20px;
 }
 
 div.post p a {
@@ -61,10 +59,13 @@ div.post p a:hover {
   box-shadow: 0 0 0 5px #DBE8FE;
 }
 
-div.post p {
+div.post p, div.post ol {
   color: #555;
   margin-bottom: 15px;
   line-height: 32px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 div.post p.preview {
@@ -72,12 +73,12 @@ div.post p.preview {
 }
 
 div.post p.quote {
-  margin: 30px 0 30px 20px;
-  font-size: 16px;
-  color: #555;
-  line-height: 24px;
   border-left: 2px solid #2473F6;
   padding-left: 20px;
+  position: relative;
+  left: -20px;
+  font-style: italic;
+  width: 700px;
 }
 
 div.post img {
