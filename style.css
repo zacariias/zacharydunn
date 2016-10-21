@@ -9,15 +9,10 @@
     width: 700px;
     margin: 80px auto;
   }
-
   div#header {
     width: 700px;
     height: 128px;
     margin: 50px auto 0 auto;
-  }
-  div.post p.frame iframe {
-    height: 394px;
-    width: 700px;
   }
 }
 
@@ -27,23 +22,10 @@
     width: 90%;
     margin: 80px 5%;
   }
-
   div#header {
     width: 90%;
     height: 128px;
     margin: 50px 5%;
-  }
-  div.post p.frame {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-  }
-  div.post p.frame iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -86,6 +68,11 @@ div.post p a {
   color: #2473F6;
 }
 
+div.post p a:hover {
+  background-color: #DBE8FE;
+  box-shadow: 0 0 0 5px #DBE8FE;
+}
+
 div.post p.quote {
   border-left: 2px solid #2473F6;
   padding-left: 20px;
@@ -100,11 +87,6 @@ div.post img {
   margin-bottom: 15px;
 }
 
-div.post p a:hover {
-  background-color: #DBE8FE;
-  box-shadow: 0 0 0 5px #DBE8FE;
-}
-
 div.post p, div.post ol {
   color: #555;
   margin-bottom: 15px;
@@ -112,6 +94,19 @@ div.post p, div.post ol {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 20px;
+}
+
+div.post p.frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+div.post p.frame iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 div.post p.preview {
